@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @MaverickGM
+- 🌱 I’m currently practicing my coding
+- 📫 How to reach me: By email: Maverickmailhot2@gmail.com
