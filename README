@@ -1,0 +1,4 @@
+This is a very basic script useable to proxy decks. 
+It takes as input a .dek file (I got mine from cockatrice) and spits out a PDF containing the decklist minus any basic lands in the ideal format for cutting the cards up. 
+It does not work if any card in the decklist has overe 99 copies.
+Simply put the .dek to be proxied in the input folder and run the main file
