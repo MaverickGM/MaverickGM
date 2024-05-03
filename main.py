@@ -10,7 +10,7 @@ currentLocation = os.path.abspath(".") + "\Input\\"
 for root, dir, files in os.walk(currentLocation):
     for file in files:
         inputFolder = currentLocation + files[0]
-        deckToUse = ConvertFromDek.convertFromDek(inputFolder)
+        deckToUse = ConvertFromDek.convertFromDek2(inputFolder)
 
 GetCardArt.getCardArt(deckToUse)
 
@@ -23,7 +23,10 @@ imageDocBuilder.page_setup.bottom_margin = 0
 outputFolder = os.path.abspath(".") + "\Output\\"
 
 for i in range(len(deckToUse)):
-    imageDocBuilder.insert_image(outputFolder+str(i+1)+".jpg",175,247)
+    cardNumNamePair = deckToUse[i]
+    reps = cardNumNamePair[0]
+    for rep in range(int(reps)):
+        imageDocBuilder.insert_image(outputFolder+str(i+1)+".jpg",175,247)
 
 DeleteOutputFolder.deleteOutputFolder()
 
