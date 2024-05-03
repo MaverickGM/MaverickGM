@@ -4,3 +4,4 @@ It does not work if any card in the decklist has overe 99 copies.
 Simply put the .dek to be proxied in the input folder and run the main file
 If you need an example of how the input file should be formatted, there is an example deck in the input folder.
 Please note that the SB lines (SB stands for sideboard) are not included in the PDF output
+A sample output has been added to indicate what the user should expect to see
