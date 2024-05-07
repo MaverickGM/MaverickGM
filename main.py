@@ -12,7 +12,7 @@ for root, dir, files in os.walk(currentLocation):
         inputFolder = currentLocation + files[0]
         deckToUse = ConvertFromDek.convertFromDek2(inputFolder)
 
-GetCardArt.getCardArt(deckToUse)
+deckToUse = GetCardArt.getCardArt(deckToUse)
 
 imageDoc = aw.Document()
 imageDocBuilder = aw.DocumentBuilder(imageDoc)
