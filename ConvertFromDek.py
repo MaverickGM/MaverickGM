@@ -18,7 +18,7 @@ def convertFromDek2(deckToUse):
         firstTwoCharacters = line[0:2]
         firstTwoCharacters = firstTwoCharacters.strip()
         if (firstTwoCharacters.isnumeric()):
-            if(cardName != 'Swamp\n' and cardName != 'Mountain\n' and cardName != 'Island\n' and cardName != 'Swamp\n' and cardName != 'Plains\n'):
+            if(cardName != 'Swamp\n' and cardName != 'Mountain\n' and cardName != 'Island\n' and cardName != 'Forest\n' and cardName != 'Plains\n' and cardName != ' Swamp\n' and cardName != ' Mountain\n' and cardName != ' Island\n' and cardName != ' Forest\n' and cardName != ' Plains\n'):
                 linelist = [firstTwoCharacters,cardName]
                 list.append(linelist)
                 #print(linelist, end='')
