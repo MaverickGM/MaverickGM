@@ -23,8 +23,7 @@ imageDocBuilder.page_setup.bottom_margin = 0
 outputFolder = os.path.abspath(".") + "\Output\\"
 
 for i in range(len(deckToUse)):
-    cardNumNamePair = deckToUse[i]
-    reps = cardNumNamePair[0]
+    reps = deckToUse[i]
     for rep in range(int(reps)):
         imageDocBuilder.insert_image(outputFolder+str(i+1)+".jpg",175,247)
 
